@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fffff0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 82px;
+}
+
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #f3e5ab;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  padding: 12px;
+  z-index: 999;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  height: 89vh;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.hero_picture {
+  display: block;
+  margin: auto 0;
+}
+
+.hero_text {
+  margin: auto 0;
+  text-align: center;
+}
+
+.title_intro {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.title_name {
+  font-weight: bold;
+  font-size: 52px;
+  margin: 24px 0;
+}
+
+.title_role {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+#social_container {
+  margin: 24px 0;
+}
+
+#social_container a {
+  text-decoration: none;
+  padding: 0 12px;
+}
+
+.about {
+  height: 80vh;
+}
+
+.about-title {
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.experience {
+  height: 120vh;
+}
+
+.experience-title {
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.timeline-area {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px 20px;
+}
+
+.timeline-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+}
+
+.timeline-content {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.timeline-title {
+  font-size: 28px;
+  padding: 12px 0;
+}
+
+.timeline-text {
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.projects {
+  height: 80vh;
+}
+
+.projects-title {
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff8dc;
+  border-radius: 2.5%;
+  padding: 12px;
+}
+
+.card-img img {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  margin: 12px;
+}
+
+.card-desc {
+  margin: 12px 0;
+}
+
+.footer {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  padding-left: 12px;
+}
+
+@media (max-width: 600px) {
+  .timeline-area {
+    padding: 20px;
+  }
+  .timeline-area::before {
+    left: 20px;
+    transform: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: none;
+  }
+}
